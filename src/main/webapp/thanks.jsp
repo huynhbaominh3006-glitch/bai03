@@ -13,14 +13,14 @@
         <h1>Thanks for joining our survey</h1>
 
         <h2>Your information:</h2>
-        <p>First Name: ${user.firstName}</p>
-        <p>Last Name: ${user.lastName}</p>
-        <p>Email: ${user.email}</p>
-        <p>Date of Birth: ${user.dob}</p>
-        <p>Heard From: ${user.heardFrom}</p>
-        <p>Wants Updates: ${user.wantsUpdates}</p>
-        <p>Email Announcements: ${user.emailOK}</p>
-        <p>Contact Via: ${user.contactVia}</p>
+        <p data-label="First Name:">${user.firstName}</p>
+        <p data-label="Last Name:">${user.lastName}</p>
+        <p data-label="Email:">${user.email}</p>
+        <p data-label="Date of Birth:">${user.dob}</p>
+        <p data-label="Heard From:">${user.heardFrom}</p>
+        <p data-label="Wants Updates:">${user.wantsUpdates}</p>
+        <p data-label="Email Announcements:">${user.emailOK}</p>
+        <p data-label="Contact Via:">${user.contactVia}</p>
     </div>
 </body>
 </html>

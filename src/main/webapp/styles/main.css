@@ -24,6 +24,7 @@ h2 {
 	font-size: 120%;
 	color: teal;
 	margin-bottom: .5em;
+    text-align: center;
 }
 
 label {
@@ -40,7 +41,7 @@ input[type="date"],
 select {
 	/* An attribute selector */
 	width: 15em;
-    width: 200px;
+    width: 250px;
 	margin-left: 0.5em;
 	margin-bottom: 0.5em;
     padding: 5px;
@@ -85,20 +86,49 @@ form {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 input[type="submit"] {
     width: 100px;
     padding: 10px;
-    margin-top: 20px;
+    margin: 20px auto;
     background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    display: block;
 }
 
 img {
     display: block;
     margin: 0 auto 20px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+label {
+    width: 120px;
+}
+
+/* Styles for thanks page */
+.container p {
+    margin: 10px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.container p::before {
+    content: attr(data-label);
+    font-weight: bold;
+    width: 150px;
+    text-align: right;
 }
