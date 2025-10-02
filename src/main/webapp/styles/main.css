@@ -5,6 +5,13 @@ body {
 	margin-left: 2em;
 	margin-right: 2em;
 	width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
 }
 
 h1 {
@@ -24,14 +31,19 @@ label {
 	width: 7em;
 	margin-bottom: 0.5em;
 	font-weight: bold;
+    display: inline-block;
 }
 
 input[type="text"],
-input[type="email"] {
+input[type="email"],
+input[type="date"],
+select {
 	/* An attribute selector */
 	width: 15em;
+    width: 200px;
 	margin-left: 0.5em;
 	margin-bottom: 0.5em;
+    padding: 5px;
 }
 
 span {
@@ -61,4 +73,32 @@ br {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="submit"] {
+    width: 100px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    margin: 0 auto 20px;
 }
